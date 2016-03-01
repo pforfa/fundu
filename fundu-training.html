@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<style>
+body {
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(44%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+</style>
+
+<script>
+function myCreateFunction() {
+	var program = prompt("Please enter the name of your Program");
+	var description = prompt("What is the aim of "+program+"?");
+	var location = prompt("Where will "+program+" be located?");
+	var start = prompt("When does "+program+" start?");
+	var end = prompt("When does "+program+" end?");;
+	
+    var table = document.getElementById("training");
+    var row = table.insertRow(1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+	var cell3 = row.insertCell(2);
+	var cell4 = row.insertCell(3);
+	var cell5 = row.insertCell(4);
+	var cell6 = row.insertCell(5);
+    cell1.innerHTML = program;
+    cell2.innerHTML = description;
+	cell3.innerHTML = location;
+	cell4.innerHTML = start;
+	cell5.innerHTML = end;
+	cell6.innerHTML = "<a href=fundu-home.html>APPLY</a>"
+}
+</script>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="fundu-main-general.css"/>
+		<title>Browse Scholarships</title>
+	</head>
+	
+	<body>
+		<div class="mainContent">
+			<p class="bigishText">Training</p>
+			<button class="buttoner" onclick="myCreateFunction()">Offer Course</button>
+			<table id="training">
+				<tr>
+					<th>Program</th>	
+					<th>Description</th>
+					<th>Location</th>
+					<th>Start Date</th>
+					<th>End Date</th>
+					<th>Apply</th>
+				</tr>
+				<tr>
+					<td>Lehman College Hackathon training</td>
+					<td>Prepare computer science majors for upcoming hackathons</td>
+					<td>Lehman College Music Building</td>
+					<td>October 16th, 2015</td>
+					<td>October 17th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Gadgets and Gizmos</td>
+					<td>Learn about the inner workings of a computer with your hands through this free program</td>
+					<td>BestBuy Dumpsters</td>
+					<td>October 20th, 2015</td>
+					<td>Decemer 1st, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Coursera Ruby On Rails</td>
+					<td>Crash Course on RoR</td>
+					<td>Queens College</td>	
+					<td>October 18th, 2015</td>
+					<td>October 30th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Security Technology Information</td>
+					<td>Learn about the most up to date security technology</td>
+					<td>70 Madison Ave, NY</td>
+					<td>November 16th, 2015</td>
+					<td>November 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Painting Portrait Tutorial</td>
+					<td>Learn to paint portraits</td>
+					<td>Central Park 86th Entrance</td>
+					<td>November 11th, 2015 at 3:00</td>
+					<td>November 11th, 2015 at 6:00</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Knitting</td>
+					<td>Learn to knit giant blankies</td>
+					<td>Lehman College Music Building Caf</td>
+					<td>October 19th, 2015</td>
+					<td>October 20th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

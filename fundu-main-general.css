@@ -1,0 +1,134 @@
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.mainContent {
+	font-family: 'Open Sans', sans-serif;
+	color: #333333;
+	padding-left: 5em;
+	padding-right: 5em;
+}
+
+.mainContent table {
+	padding: 0.2em;
+	border-collapse:collapse;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.mainContent th{
+	color:white;
+	background-color:#333333;
+	font-size:110%;
+	padding:15px;
+}
+
+.mainContent button {
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	top:1em;
+	right:1em;
+	border-width: 0;
+	width: 10em;
+	height: 3em;
+}
+
+.mainContent td {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	width:20%;
+	text-align:center;
+	padding:10px;
+}
+
+.mainContent tr:nth-child(even){
+	background:lightgray;
+}
+
+.mainContent label {
+	float: right;
+}
+
+.bigText {
+	font-size: 6em;
+	line-height: 2em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.bigishText {
+	font-size: 5em;
+	line-height: 2em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.loginBigText {
+	font-size: 5em;
+	line-height: 2em;
+	text-transform: uppercase;
+}
+
+.smallText {
+	font-size: 2em;
+	text-align: justify;
+}
+
+.smallText a {
+	color: #333333;
+}
+
+body {
+	margin:0;
+	background-size: cover;
+	background-position: center;
+	background-color:#F0F0F0;
+}
+
+.numberTable {
+	font-size: 1.7em;
+}
+
+.numberTable tr {
+	height: 1em;
+}
+
+.numberTable td {
+	width: 9em;
+}
+
+.loginScreen {
+	font-family: 'Open Sans', sans-serif;
+	color: #333333;
+}
+
+.loginScreen form {
+	position:absolute;
+	width:40%;
+}
+
+#topPart {
+	position: absolute;
+	background-color: #F0F0F0;
+}
+
+#topPart img {
+	top: 0.25em;
+	vertical-align: bottom;
+	height: 4.25em;
+}
+
+#loginLogo img {
+	top: 0.25em;
+	height: 6em;
+}
+
+.offerTable {
+	text-align: left;
+	float: left;
+	padding:0;
+	left:0;
+	right:0;
+}

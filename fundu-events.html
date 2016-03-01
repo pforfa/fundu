@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<style>
+body {
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(44%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+</style>
+
+<script>
+function myCreateFunction() {
+	var event = prompt("What event are you organizing?");
+	var organizers = prompt("Who is organizing this event?");
+	var aim = prompt("What is the goal of this event");
+	var location = prompt("Where will this event be held?");
+	var date = prompt("When will this event be held??");
+	
+	
+    var table = document.getElementById("events");
+    var row = table.insertRow(1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+	var cell3 = row.insertCell(2);
+	var cell4 = row.insertCell(3);
+	var cell5 = row.insertCell(4);
+	var cell6 = row.insertCell(5);
+    cell1.innerHTML = event;
+    cell2.innerHTML = organizers;
+	cell3.innerHTML = aim;
+	cell4.innerHTML = location;
+	cell5.innerHTML = date;
+	cell6.innerHTML = "<a href=fundu-home.html>RSVP</a>"
+}
+</script>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="fundu-main-general.css"/>
+		<title>Browse Events</title>
+	</head>
+	
+	<body>
+		<div class="mainContent">
+			<p class="bigishText">Events</p>
+			<button onclick="myCreateFunction()">Create an Event</button>
+			<table id="events">
+				<tr>
+					<th>Event</th>	
+					<th>Organizers</th>
+					<th>Aim</th>
+					<th>Location</th>
+					<th>Date</th>
+					<th>RSVP</th>
+				</tr>
+				<tr>
+					<td>Information Security Meetup</td>
+					<td>Johnson & Johnson</td>
+					<td class="aim">Educate young programmers on information security, and supply them with resources for the field</td>
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+					<td>October 18th, 2015</td>
+				</tr>
+				<tr>
+					<td>Queens College Gala</td>
+					<td>Queens College</td>
+					<td>Come hang out and enjoy food and refreshments at the QC Gala!</td>
+					<td>October 19th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+					<td>October 19th, 2015</td>
+				</tr>
+				<tr>
+					<td>Student Discount Knicks Tickets</td>
+					<td>MSG</td>
+					<td>Enjoy discounted tickets with proof of studentship!</td>	
+					<td>October 28th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+					<td>October 28th, 2015</td>
+				</tr>
+				<tr>
+					<td>Austin Street Fair</td>
+					<td>Forest Hills Events Committee</td>
+					<td>Come join us for the annual Austin Street Fair!</td>
+					<td>November 1st, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+					<td>November 3rd, 2015</td>
+				</tr>
+				<tr>
+					<td>Student Raffle</td>
+					<td>Lehman College</td>
+					<td>Join us for the raffle of a lifetime!</td>
+					<td>October 27th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+					<td>October 27th, 2015</td>
+				</tr>
+				<tr>
+					<td>Book Reading Club Day</td>
+					<td>Hunter College Book Club</td>
+					<td>Come join us in reading Dr. Seuss books!</td>
+					<td>October 29th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+					<td>October 29th, 2015</td>
+				</tr>
+				<tr>
+					<td>What to do with a Computer Science Major</td>
+					<td>American Association Of Americans</td>
+					<td>Clueless about your future? Join us for a great talk!</td>
+					<td>October 20th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+					<td>October 20th, 2015</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

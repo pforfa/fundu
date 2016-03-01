@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<style>
+body {
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(44%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+</style>
+
+<script>
+function myCreateFunction() {
+	var scholarship = prompt("Please enter the name of your Scholarship");
+	var amount = prompt("Please enter the amount your" +scholarship+ "scholarship is offering");
+	var eligibility = prompt("Who is eligible for your scholarship?");
+	var deadline = prompt("What is the application deadline for youre scholarship?");
+	
+    var table = document.getElementById("scholarships");
+    var row = table.insertRow(1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+	var cell3 = row.insertCell(2);
+	var cell4 = row.insertCell(3);
+	var cell5 = row.insertCell(4);
+    cell1.innerHTML = scholarship;
+    cell2.innerHTML = amount;
+	cell3.innerHTML = eligibility;
+	cell4.innerHTML = deadline;
+	cell5.innerHTML = "<a href=fundu-home.html>APPLY</a>"
+}
+</script>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="fundu-main-general.css"/>
+		<title>Browse Scholarships</title>
+	</head>
+	
+	<body>
+		<div class="mainContent">
+			<p class = "bigishText">Scholarships</p>
+			<button class="buttoner" onclick="myCreateFunction()">Offer a Scholarship</button>
+			<table id="scholarships">
+				<tr>
+					<th>Scholarship</th>	
+					<th>Amount</th>
+					<th>Eligiblity</th>
+					<th>Deadline</th>
+					<th>Apply</th>
+				</tr>
+				<tr>
+					<td>Goldman Sach Programmer Grant</td>
+					<td>$1,500</td>
+					<td>Freshman/Sophmore Computer Science Majors</td>
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Pandora's Young Programmers Scholarship</td>
+					<td>$3,000</td>
+					<td>Ages 14-17, interested in Computer Science</td>
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Facebook</td>
+					<td>Psuedo Philosopher</td>
+					<td>Yes</td>	
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>IBM</td>
+					<td>Junior/Senior Computer Science Majors</td>
+					<td>Yes</td>
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Goldman Sachs</td>
+					<td>Hackathon Pro</td>
+					<td>Yes</td>
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Goldman Sachs</td>
+					<td>Hackathon Pro</td>
+					<td>Yes</td>
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Goldman Sachs</td>
+					<td>Hackathon Pro</td>
+					<td>Yes</td>
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

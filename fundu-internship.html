@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<style>
+body {
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(44%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 44%, rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+</style>
+
+<script>
+function myCreateFunction() {
+	var company = prompt("Please enter the name of your company.");
+	var position = prompt("What position will this internship fulfill?");
+	var paid = prompt("Is this a paid internship?");
+		var res = paid.toLowerCase();
+		if(paid=="yes"){var amount = prompt("How much per hour does your internship offer?")}
+		else{var amount = "No";}
+	var start = prompt("When does this internship start?");
+	
+    var table = document.getElementById("internships");
+    var row = table.insertRow(1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+	var cell3 = row.insertCell(2);
+	var cell4 = row.insertCell(3);
+	var cell5 = row.insertCell(4);
+    cell1.innerHTML = company;
+    cell2.innerHTML = position;
+	cell3.innerHTML = amount;
+	cell4.innerHTML = start;
+	cell5.innerHTML = "<a href=fundu-home.html>APPLY</a>"
+}
+</script>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="fundu-main-general.css"/>
+		<title>Browse Internships</title>
+	</head>
+		
+	<body>
+		<div class="mainContent">
+			<p class="bigishText">Internships</p>
+			<button onclick="myCreateFunction()">Offer an Internship</button>
+			<table id="internships">
+				<tr>
+					<th>Company</th>	
+					<th>Position</th>
+					<th>Paid (Yes/No)</th>
+					<th>Start Date</th>
+					<th>Apply</th>
+				</tr>
+				<tr>
+					<td>Goldman Sachs</td>
+					<td>Data Analyist</td>
+					<td>$11</td>
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Pandora</td>
+					<td>User Behavior</td>
+					<td>No</td>
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Facebook</td>
+					<td>Psuedo Philosopher</td>
+					<td>$9</td>	
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>IBM</td>
+					<td>Junior/Senior Computer Science Majors</td>
+					<td>$13</td>
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>Goldman Sachs</td>
+					<td>Hackathon Pro</td>
+					<td>No</td>
+					<td>October 18th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>JPMorgan</td>
+					<td>Software Engineer</td>
+					<td>$12</td>
+					<td>October 28th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+				<tr>
+					<td>ESPN</td>
+					<td>Infrastructure Engineer</td>
+					<td>No</td>
+					<td>November 11th, 2015</td>
+					<td><a href="forms/StudentApp.html">APPLY</a></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

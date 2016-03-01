@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="fundu-main-general.css"/>
+		<title>Sign Up</title>
+	</head>
+	<body>
+		<div class="loginScreen">
+			<p class="loginBigText">Sign Up</p>
+			<form name="signup">
+				<table>
+					<tr>
+						<td>Username</td><td><input type="text" name="userid"/></td>
+					</tr>
+					<tr>
+						<td>Password</td><td><input type="text" name="pswrd"/></td>
+					</tr>
+					<tr>
+						<td>Repeat Password</td><td><input type="text" name="pswrd2"/></td>
+					</tr>
+					<tr>
+						<td>E-Mail</td><td><input type="text" name="email"/></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="button" onclick="check(this.form)" value="Sign Up"/><input type="reset" value="Cancel"/></td>
+					</tr>
+				</table>
+				
+			</form>
+		</div>
+		<script language="javascript">
+			function check(form)/*function to check userid & password*/
+			{
+				if(form.userid.value == "student" && form.pswrd.value == "123")
+				{
+					window.open("fundu.html","_self")/*opens the target page while Id & password matches*/
+				}
+				else
+				{
+					alert("Error Password or Username")/*displays error message*/
+				}
+			}
+		</script>
+	</body>
+</html>

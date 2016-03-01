@@ -1,0 +1,119 @@
+body {
+	background-color: #EEEEEE;
+	margin: 0;
+}
+
+#topPart {
+	position: absolute;
+	width: 100%;
+	background-color: #F0F0F0;
+}
+
+#topPart img {
+	top: 0.25em;
+	vertical-align: bottom;
+	height: 4.25em;
+}
+
+#logSign {
+	position: absolute;
+	top: 1.5em;
+	right: 1em;
+	font-weight: 300;
+	font-size: 1em;
+}
+
+#logSign li a {
+	text-decoration: none;
+	color: #666;
+}
+
+#nav {
+	position: absolute;
+	top: 4.25em;
+	width: 100%;
+	background-color: #AAAAAA;
+	height: 3em;
+	font-size: 1em;
+}
+
+#nav ul {
+	width: 100%;
+}
+
+#nav li a {
+	height: 3em;
+	line-height: 3em;
+	width: 20%;
+	text-align: center;
+	text-decoration: none;
+	color: #444444;
+	background-color: #AAAAAA;
+	float: left;
+}
+
+#nav li a:hover {
+	background-color: #BBBBBB;
+}
+
+#mainPart {
+	position: absolute;
+	top: 7.25em;
+	bottom: 3em;
+	width: 100%;
+}
+
+#mainPart iframe {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: 0;
+}
+
+#bottomPart {
+	position: absolute;
+	width: 100%;
+	background-color: #AAAAAA;
+	height: 3em;
+	bottom: 0em;
+}
+
+#bottomPart ul {
+	width: 100%;
+}
+
+
+#bottomPart li a {
+	height: 3em;
+	padding-left: 1em;
+	padding-right: 1em;
+	line-height: 3em;
+	text-align: center;
+	text-decoration: none;
+	color: #444444;
+	background-color: #AAAAAA;
+	float: right;
+}
+
+.boldtext {
+	font-weight: 600;
+}
+
+.horizontalList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+.horizontalList li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#logSign li {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
